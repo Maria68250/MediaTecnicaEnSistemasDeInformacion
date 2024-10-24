@@ -1,0 +1,15 @@
+import java.util.Random;
+
+public class GeneradorNumerosAleatorios {
+    public static void main(String[] args) {
+        Random random = new Random();
+       
+        // Genera dos numeros aleatorios entre 0 y 99
+        int numero1 = random.nextInt(100);
+        int numero2 = random.nextInt(100);
+       
+        // Muestra los numeros generados
+        System.out.println("Numero 1: " + numero1);
+        System.out.println("Numero 2: " + numero2);
+    }
+}
