@@ -1,0 +1,46 @@
+import java.util.Random;
+
+public class MatrizAleatoria {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int n = random.nextInt(9) + 2;
+        int m = random.nextInt(9) + 2;
+       
+       System.out.println(" la matriz es de :" + n + " x " + m);
+       
+        int[][] matriz = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matriz[i][j] = random.nextInt(100);
+       
+              }
+        }
+
+        System.out.println("Matriz inicial:");
+        for (int[] fila : matriz) {
+            for (int valor : fila) {
+                System.out.print(valor + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        if (n == m){
+            for (int i = 0; i < n; i++){
+                matriz[i][i] = random.nextInt(100);
+        }
+    } else {
+        for (int i = 0; i < n && i < m;i++){
+            for (int j = i + 1; j < m; j++){
+                matriz[i][j] = random.nextInt(100);
+            }
+        }
+    }
+    System.out.println("Matriz despues de la operacion:");
+    for (int[] fila : matriz){
+        for (int valor : fila){
+            System.out.print(valor + " ");
+        }
+        System.out.println();
+    }
+}
+}
