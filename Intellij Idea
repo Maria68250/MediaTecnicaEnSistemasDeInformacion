@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner keyboard = new Scanner(System.in);
+
+System.out.print("Ingrese un numero: ");
+int a = keyboard.nextInt();
+
+
+System.out.print("Ingrese otro numero: ");
+int b = keyboard.nextInt();
+
+
+
+int result = a + b;
+System.out.println("La suma de " + a + " y " + b + " es: " + result);
+}
+
+public static int add(int a, int b) {
+int c = a + b;
+return a + b;
+}
+
+public static int substract(int a, int b) {
+int c = a - b;
+return a - b;
+}
+
+public static int multiply(int a, int b) {
+return a * b;
+}
+}
+
